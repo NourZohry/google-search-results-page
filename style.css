@@ -3,11 +3,6 @@ body {
     overflow-x: hidden;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .logo-image {
     height: 40px;
     padding-right: 20px;
@@ -30,6 +25,7 @@ body {
     font-size: medium;
     padding-left: 15px;
     padding-right: 85px;
+    box-shadow: 0 0 2px rgb(184, 184, 184);
 }
 
 .search-box:hover {
@@ -179,11 +175,27 @@ body {
 }
 
 .header2 {
-    background-color: whitesmoke;
-    display: flex;
-    grid-column-gap: 10px;
-    align-items: center;
+    /* background-color: whitesmoke; */
+    border-width: 0px 0px 1px 0px;
+    border-color: lightgray;
+    border-style: solid;
     height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header2-nav {
+    color:slategray;
+}
+
+.header2-nav-tools {
+    margin-left:150px;
+}
+
+.header2-text {
+    margin-left: 180px;
+    display: flex;
+    grid-column-gap: 20px;
 }
 
 .header-sub {
@@ -191,10 +203,125 @@ body {
     grid-column-gap: 10px;
 }
 
+.results-count {
+    margin-left: 180px;
+    color: slategray;
+    font-size: smaller;
+    margin-bottom: 10px;
+}
+
+.website {
+    margin: 10px 0px 25px 0px;
+}
+
+.full-url {
+    display: flex;
+    grid-column-gap: 5px;
+}
+
+.sub-url {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color:slategray;
+}
+
+.title {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.url {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.description {
+    color:dimgray;
+    padding: 5px 0px 5px 0px;
+    font-size: 14px;
+}
+
+.website-urls {
+    display: flex;
+    grid-column-gap: 5px;
+}
+
+.extra-urls {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.extra-urls:hover {
+    text-decoration: underline;
+}
+
+.wiki-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
+}
+
+.wiki-info-type {
+    font-size: 14px;
+    font-weight: bold;
+    color:dimgray;
+}
+
+.wiki-info-data {
+    font-size: 14px;
+    color:dimgray;
+}
+
+.wiki-info-url {
+    text-decoration: none;
+}
+
+.wiki-info-url:hover {
+    text-decoration: underline;
+}
+
+.related-searches {
+    padding-top:20px;
+}
+
+.related-searches-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.related-searches-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%; 
+}
+
+.related-search-grid-item {
+    background-color: whitesmoke;
+    border-radius: 50px;
+    margin: 5px 15px 5px 15px;
+    padding: 10px 0px 15px 0px;
+}
+
+.related-search-grid-item-image {
+    opacity: 0.6;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.related-search-grid-item-text {
+    margin-left: 60px;
+}
+
 .main-grid {
     display: grid;
     grid-template-columns: 37% 23%;
-    padding-left: 170px;
+    padding-left: 180px;
     grid-gap: 100px;
 }
 
