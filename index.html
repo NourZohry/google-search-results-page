@@ -1,265 +1,443 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            media="screen"
-            href="reset.css"
-        >
-        <link
-            rel="stylesheet"
-            type="text/css"
-            media="screen"
-            href="style.css"
-        >
-    </head>
-    <body>
-        <div class="header">
-            <span class="header-sub">
-                <img src="images/logo.png" class="logo-image">
-                <span class="search-container">
-                    <input type="text" placeholder="MapleStory" class="search-box">
-                    <img src="images/close-icon.png" class="close-image">
-                    <span class="separator"></span>
-                    <img src="images/search-icon.png" class="search-image">
-                </span>
+
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+
+<body>
+    <!-- Header 1 (Logo, search bar, options, sign in, etc) -->
+    <div class="header">
+        <span class="header-sub">
+            <img src="images/logo.png" alt="Google logo" class="logo-image">
+            <span class="search-container">
+                <input type="text" placeholder="MapleStory" class="search-box">
+                <img src="images/close-icon.png" alt="Close" class="close-image">
+                <span class="separator"></span>
+                <img src="images/search-icon.png" alt="Search" class="search-image">
             </span>
-            <span class="header-sub">
-                <a href="https://github.com/NourZohry">
-                    <img src="images/github.png" class="github-image">
-                </a>
-                <br>
-                <a href="https://www.google.com/preferences?hl=en&prev=https://www.google.com/search?q%3Dmaplestory%26client%3Dubuntu%26hs%3DjqJ%26channel%3Dfs%26ei%3DUqEnYdzbF6-VjLsPktmf-As%26oq%3Dmaplestory%26gs_lcp%3DCgdnd3Mtd2l6EAMyBwguEEMQkwIyBAguEEMyBAguEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoILhDIAxCwAxBDSgUIOhIBMkoFCDgSATFKBAhBGABQvoz_BFiQkP8EYMuR_wRoAnACeACAAdsBiAGABJIBBTAuMi4xmAEAoAEByAEPwAEB%26sclient%3Dgws-wiz%26ved%3D0ahUKEwjczM2q787yAhWvCmMBHZLsB78Q4dUDCA4%26uact%3D5&sa=X&ved=2ahUKEwjinqGtls_yAhUp5eAKHb-4C3UQo_oBKAF6BAgBEBE">
-                    <img src="images/settings-gear.png" class="gear-image">
-                </a>
-                <br>
-                <a href="https://www.google.com.eg/intl/en/about/products">
-                    <img src="images/dots.png" class="dots-image">
-                </a>
-                <br>
-                <form action="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">
-                    <input type="submit" value="Sign in" class="sign-in-button">
-                </form>
+        </span>
+        <span class="header-sub">
+            <a href="https://github.com/NourZohry">
+                <img src="images/github.png" alt="GitHub" class="github-image">
+            </a>
+            <br>
+            <a
+                href="https://www.google.com/preferences?hl=en&prev=https://www.google.com/search?q%3Dmaplestory%26client%3Dubuntu%26hs%3DjqJ%26channel%3Dfs%26ei%3DUqEnYdzbF6-VjLsPktmf-As%26oq%3Dmaplestory%26gs_lcp%3DCgdnd3Mtd2l6EAMyBwguEEMQkwIyBAguEEMyBAguEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoILhDIAxCwAxBDSgUIOhIBMkoFCDgSATFKBAhBGABQvoz_BFiQkP8EYMuR_wRoAnACeACAAdsBiAGABJIBBTAuMi4xmAEAoAEByAEPwAEB%26sclient%3Dgws-wiz%26ved%3D0ahUKEwjczM2q787yAhWvCmMBHZLsB78Q4dUDCA4%26uact%3D5&sa=X&ved=2ahUKEwjinqGtls_yAhUp5eAKHb-4C3UQo_oBKAF6BAgBEBE">
+                <img src="images/settings-gear.png" alt="Settings" class="gear-image">
+            </a>
+            <br>
+            <a href="https://www.google.com.eg/intl/en/about/products">
+                <img src="images/dots.png" alt="Products" class="dots-image">
+            </a>
+            <br>
+            <form
+                action="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">
+                <input type="submit" value="Sign in" class="sign-in-button">
+            </form>
+        </span>
+    </div>
+    <!-- Header 2 ("All", "Images", "Videos", "News", etc) -->
+    <div class="header2">
+        <!-- Maybe this (spans) is a bad idea? -->
+        <!-- Needs flex styling -->
+        <span class="header2-text">
+            <span class="header2-nav">
+                <!-- icon here -->
+                <p>All</p>
             </span>
-        </div>
-        <div class="header2">
-            <!-- Maybe this (spans) is a bad idea? -->
-            <!-- Needs flex styling -->
-            <span class="header2-text">
-                <span class="header2-nav">
-                    <!-- icon here -->
-                    <p>All</p>
-                </span>
-                <span class="header2-nav">
-                    <p>Images</p>
-                </span>
-                <span class="header2-nav">
-                    <p>Videos</p>
-                </span>
-                <span class="header2-nav">
-                    <p>News</p>
-                </span>
-                <span class="header2-nav">
-                    <p>Maps</p>
-                </span>
-                <span class="header2-nav">
-                    <p>More</p>
-                </span>
-                <span class="header2-nav header2-nav-tools">
-                    <p>Tools</p>
-                </span>
+            <span class="header2-nav">
+                <p>Images</p>
             </span>
-        </div>
-        <br>
-        <!-- Needs styling -->
-        <div class="results-count">
-            <p>About 11,600,000 results (0.61 seconds)</p>
-        </div>
-        <div class="main-grid">
-            <div class="grid-item-1">
-                <!-- 1 -->
-                <div class="website">
+            <span class="header2-nav">
+                <p>Videos</p>
+            </span>
+            <span class="header2-nav">
+                <p>News</p>
+            </span>
+            <span class="header2-nav">
+                <p>Maps</p>
+            </span>
+            <span class="header2-nav">
+                <p>More</p>
+            </span>
+            <span class="header2-nav header2-nav-tools">
+                <p>Tools</p>
+            </span>
+        </span>
+    </div>
+    <!-- About xxx results (xx seconds) -->
+    <div class="results-count">
+        <p>About 11,600,000 results (0.61 seconds)</p>
+    </div>
+    <!-- Split the screen into two -->
+    <div class="main-grid">
+        <!-- Left side -->
+        <div class="grid-item-1">
+            <!-- Normal website -->
+            <div class="website">
+                <p class="url">https://maplestory.nexon.net</p>
+                <a href="https://maplestory.nexon.net" class="title">MapleStory | Play Now</a>
+                <p class="description">Discover Your Story! <b>MapleStory</b> delivers legendary MMORPG adventures with
+                    boldly original iconic 2D charm.</p>
+                <!-- Extra urls -->
+                <div class="website-urls">
+                    <a href="" class="extra-urls">News</a>
+                    <p>·</p>
+                    <a href="" class="extra-urls">Classes & Jobs</a>
+                    <p>·</p>
+                    <a href="" class="extra-urls">Player Rankings</a>
+                    <p>·</p>
+                    <a href="" class="extra-urls">Explore MapleStory</a>
+                </div>
+            </div>
+            <!-- People Also Ask segment -->
+            <div class="people-also-ask">
+                <p class="people-also-ask-title">People also ask</p>
+                <div class="people-also-ask-question">
+                    <div class="people-also-ask-text">Is MapleStory still alive?</div>
+                    <img class="people-also-ask-arrow" alt="Expand" src="images/v-arrow.png">
+                </div>
+                <div class="people-also-ask-question">
+                    <div class="people-also-ask-text">Is MapleStory 2 dying?</div>
+                    <img class="people-also-ask-arrow" alt="Expand" src="images/v-arrow.png">
+                </div>
+                <div class="people-also-ask-question">
+                    <div class="people-also-ask-text">Did MapleStory 2 shut down in Korea?</div>
+                    <img class="people-also-ask-arrow" alt="Expand" src="images/v-arrow.png">
+                </div>
+                <div class="people-also-ask-feedback">Feedback</div>
+            </div>
+            <!-- Normal website -->
+            <div class="website">
+                <div class="full-url">
                     <p class="url">https://maplestory.nexon.net</p>
-                    <a href="https://maplestory.nexon.net" class="title">MapleStory | Play Now</a>
-                    <p class="description">Discover Your Story!
-                        <b>MapleStory</b>
-                        delivers legendary MMORPG adventures with
-                    boldly original iconic 2D charm.
-                    </p>
-                    <div class="website-urls">
-                        <a href="" class="extra-urls">News</a>
-                        <p>·</p>
-                        <a href="" class="extra-urls">Classes & Jobs</a>
-                        <p>·</p>
-                        <a href="" class="extra-urls">Player Rankings</a>
-                        <p>·</p>
-                        <a href="" class="extra-urls">Explore MapleStory</a>
+                    <p class="sub-url"> › news</p>
+                </div>
+                <a href="https://maplestory.nexon.net/news" class="title">Official News - MapleStory - Nexon</a>
+                <p class="description">The maintenance has been completed, thank you for your patience and enjoy the
+                    v.225 Goo Island Getaway! We have extended Cash Shop items for 7 hours. Please ...</p>
+            </div>
+            <!-- Twitter segment -->
+            <p class="url">https://twitter.com/MapleStory</p>
+            <a href="https://twitter.com/MapleStory" class="title">MapleStory (@MapleStory) · Twitter</a>
+            <!-- Container to have both the tweets and the right button -->
+            <div class="twitter-container">
+                <!-- Grid to contain the tweet cards -->
+                <div class="twitter-grid">
+                    <!-- Card 1 -->
+                    <div class="twitter-card">
+                        <img src="images/twitter-1.jpeg" alt="Twitter Image" class="twitter-card-image">
+                        <p class="twitter-card-text">
+                            v225 Patch Notes are out! Check out everything Goo Island has to offer 🍁 👉
+                            <br>
+                            Details:
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78QhlR6BAgCEAw&url=https%3A%2F%2Fbit.ly%2F3Df8cnX&usg=AOvVaw24b81qc5CfZEfedlO5_FWx"
+                                class="twitter-card-text-url">bit.ly/3Df8cnX</a>
+                        </p>
+                        <p class="twitter-card-footer">
+                            <span class="twitter-card-text-twitter">Twitter</span>
+                            <span>·</span>
+                            <span class="twitter-card-text-days">2 days ago</span>
+                        </p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="twitter-card">
+                        <img src="images/twitter-2.jpeg" alt="Twitter Image" class="twitter-card-image">
+                        <p class="twitter-card-text">Introducing the Pink Bean Bulletin, a new memo where we'll be
+                            addressing various community topics! 🍁 📖
+                            <br>
+                            Details:
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78QhlR6BAgCEBE&url=https%3A%2F%2Fbit.ly%2F3zdd4rg&usg=AOvVaw0Z1JDqpdPsautt-EVwMq2O"
+                                class="twitter-card-text-url">bit.ly/3zdd4rg</a>
+                        </p>
+                        <p class="twitter-card-footer">
+                            <span class="twitter-card-text-twitter">Twitter</span>
+                            <span>·</span>
+                            <span class="twitter-card-text-days">3 days ago</span>
+                        </p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="twitter-card">
+                        <img src="images/twitter-3.jpeg" alt="Twitter Image" class="twitter-card-image">
+                        <p class="twitter-card-text">Anyone watching tonight? 🧟 👀 #TheWalkingDead</p>
+                        <p class="twitter-card-footer">
+                            <span class="twitter-card-text-twitter">Twitter</span>
+                            <span>·</span>
+                            <span class="twitter-card-text-days">2 days ago</span>
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <!-- People also ask --></div>
-                <div class="website">
-                    <div class="full-url">
-                        <p class="url">https://maplestory.nexon.net</p>
-                        <p class="sub-url"> › news</p>
-                    </div>
-                    <a href="https://maplestory.nexon.net/news" class="title">Official News - MapleStory - Nexon</a>
-                    <p class="description">
-                        The maintenance has been completed, thank you for your patience and enjoy the
-                    v.225 Goo Island Getaway! We have extended Cash Shop items for 7 hours. Please ...
-                    </p>
+                <!-- Right arrow button -->
+                <div class="twitter-right">
+                    <img src="images/right-arrow.png" alt="More Tweets" class="twitter-right-arrow">
                 </div>
-                <div>
-                    <!-- MapleStory Twitter --></div>
-                <div class="website">
-                    <div class="full-url">
-                        <p class="url">https://en.wikipedia.org</p>
-                        <p class="sub-url"> › wiki › MapleStory</p>
-                    </div>
-                    <a href="https://maplestory.nexon.net" class="title">MapleStory - Wikipedia</a>
-                    <p class="description">The Japanese anime entitled
-                        <b>MapleStory</b>
-                        (メイプルストーリー, Meipuru Sutōrī), was
-                    adapted of the game and produced by Madhouse. It was aired on TV Tokyo between ...
-                    </p>
-                    <!-- Publisher/Release/Mode/Developer(s) info-->
-                    <div class="wiki-info">
-                        <span>
-                            <span class="wiki-info-type">Publisher(s):</span>
-                            <span class="wiki-info-data"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAHoECAoQBA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNEXON_Corporation&usg=AOvVaw3DZGaAsjjHaiKaBX20seGk" class="wiki-info-url">Nexon</a> (‎<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAXoECAoQBQ&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSouth_Korea&usg=AOvVaw3M4VkaFZtU_S6F6MZ3-9t_" class="wiki-info-url">South Korea‎</a>, ‎<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAnoECAoQBg&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJapan&usg=AOvVaw1wAnz-Bo1PKEgWaNp8Yxw7" class="wiki-info-url">Japan</a>‎, <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoA3oECAoQBw&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNorth_America&usg=AOvVaw1P3WhvSOacvImDdAHqZTAd" class="wiki-info-url">‎N</a>...</span>
+            </div>
+            <!-- Normal website -->
+            <div class="website">
+                <div class="full-url">
+                    <p class="url">https://en.wikipedia.org</p>
+                    <p class="sub-url"> › wiki › MapleStory</p>
+                </div>
+                <a href="https://maplestory.nexon.net" class="title">MapleStory - Wikipedia</a>
+                <p class="description">The Japanese anime entitled <b>MapleStory</b> (メイプルストーリー, Meipuru Sutōrī), was
+                    adapted of the game and produced by Madhouse. It was aired on TV Tokyo between ...</p>
+                <!-- Wikipedia website info -->
+                <div class="wiki-info">
+                    <span>
+                        <span class="wiki-info-type">Publisher(s):</span>
+                        <span class="wiki-info-data">
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAHoECAoQBA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNEXON_Corporation&usg=AOvVaw3DZGaAsjjHaiKaBX20seGk"
+                                class="wiki-info-url">Nexon</a>
+                            (<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAXoECAoQBQ&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSouth_Korea&usg=AOvVaw3M4VkaFZtU_S6F6MZ3-9t_"
+                                class="wiki-info-url">South Korea‎</a>,
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAnoECAoQBg&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJapan&usg=AOvVaw1wAnz-Bo1PKEgWaNp8Yxw7"
+                                class="wiki-info-url">Japan</a>,
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoA3oECAoQBw&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNorth_America&usg=AOvVaw1P3WhvSOacvImDdAHqZTAd"
+                                class="wiki-info-url">‎N</a>...
                         </span>
-                        <span>
-                            <span class="wiki-info-type">Release:</span>
-                            <span class="wiki-info-data"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAHoECAoQCQ&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSouth_Korea&usg=AOvVaw3M4VkaFZtU_S6F6MZ3-9t_" class="wiki-info-url">KOR</a>: April 29, 2003; <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAXoECAoQCg&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJapan&usg=AOvVaw1wAnz-Bo1PKEgWaNp8Yxw7" class="wiki-info-url">JP</a>: Decemb...
-                            </span>
+                    </span>
+                    <span>
+                        <span class="wiki-info-type">Release:</span>
+                        <span class="wiki-info-data">
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAHoECAoQCQ&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSouth_Korea&usg=AOvVaw3M4VkaFZtU_S6F6MZ3-9t_"
+                                class="wiki-info-url">KOR</a>: April 29, 2003;
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAXoECAoQCg&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJapan&usg=AOvVaw1wAnz-Bo1PKEgWaNp8Yxw7"
+                                class="wiki-info-url">JP</a>: Decemb...
                         </span>
-                        <span>
-                            <span class="wiki-info-type">Mode(s):</span>
-                            <span class="wiki-info-data"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAHoECAoQDA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMultiplayer_video_game&usg=AOvVaw02qpMaNPhWuZYAlBojO-De" class="wiki-info-url">Multiplayer</a></span>
+                    </span>
+                    <span>
+                        <span class="wiki-info-type">Mode(s):</span>
+                        <span class="wiki-info-data">
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAHoECAoQDA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMultiplayer_video_game&usg=AOvVaw02qpMaNPhWuZYAlBojO-De"
+                                class="wiki-info-url">Multiplayer</a>
                         </span>
-                        <span>
-                            <span class="wiki-info-type">Developer(s):</span>
-                            <span class="wiki-info-data"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAHoECAoQDg&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWizet&usg=AOvVaw319A0vwbdJh8W_gymh5b0S" class="wiki-info-url">Wizet</a></span>
+                    </span>
+                    <span>
+                        <span class="wiki-info-type">Developer(s):</span>
+                        <span class="wiki-info-data">
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Qs2YoAHoECAoQDg&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWizet&usg=AOvVaw319A0vwbdJh8W_gymh5b0S"
+                                class="wiki-info-url">Wizet</a>
                         </span>
+                    </span>
                     </span>
                 </div>
             </div>
+            <!-- Normal website -->
             <div class="website">
                 <div class="full-url">
                     <p class="url">https://store.steampowered.com</p>
                     <p class="sub-url"> › app › MapleStory</p>
                 </div>
                 <a href="https://maplestory.nexon.net/news" class="title">MapleStory on Steam</a>
-                <p class="description">
-                    Aug 9, 2012 — Join over 260 million players worldwide in <b>MapleStory</b>, the world's biggest 2D MMORPG adventure! Play now for free.</p>
+                <p class="description">Aug 9, 2012 — Join over 260 million players worldwide in <b>MapleStory</b>, the
+                    world's biggest 2D MMORPG adventure! Play now for free.</p>
             </div>
-
+            <!-- Normal website -->
             <div class="website">
                 <p class="url">https://maplestory.com</p>
-                <a href="https://maplestory.nexon.net/news" class="title">
-                    Discover Your MapleStory | Official MapleStory
-                    Website ...
-                </a>
-                <p class="description">
-                    Gather your friends and conquer powerful foes. Your adventure awaits! Discover
-                    your
-                    <b>MapleStory!</b>
-                </p>
+                <a href="https://maplestory.nexon.net/news" class="title">Discover Your MapleStory | Official MapleStory
+                    Website ...</a>
+                <p class="description">Gather your friends and conquer powerful foes. Your adventure awaits! Discover
+                    your <b>MapleStory!</b></p>
             </div>
-            <!-- Videos -->
+            <!-- Videos segment -->
+            <div class="videos">
+                <div class="videos-title">Videos</div>
+                <!-- Videos -->
+                <div class="videos-videos">
+                    <!-- Video 1 -->
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78QwqsBegQIIRAB&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXqKablhTU8c&usg=AOvVaw2VahRpxX47CgRdzCA8lbVX"
+                        class="videos-video-url">
+                        <div class="videos-video">
+                            <span>
+                                <img src="images/video-thumbnail-1.jpeg" alt="Video Thumbnail"
+                                    class="videos-video-thumbnail">
+                            </span>
+                            <span>
+                                <p class="videos-video-title">Is it Worth It To Start Playing MapleStory in 2021? Free
+                                    To ...</p>
+                                <span class="videos-video-youtube">YouTube</span>
+                                <span class="videos-video-author">· coppersan</span>
+                                <p class="videos-video-date">May 6, 2021</p>
+                            </span>
+                        </div>
+                    </a>
+                    <!-- Video 2 -->
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78QwqsBegQIIhAB&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DCMf7um9RVJ4&usg=AOvVaw1EJI-celfj7AuV8IlvtJAd"
+                        class="videos-video-url">
+                        <div class="videos-video">
+                            <span>
+                                <img src="images/video-thumbnail-2.jpeg" alt="Video Thumbnail"
+                                    class="videos-video-thumbnail">
+                            </span>
+                            <span>
+                                <p class="videos-video-title">Goo Island Event Guide | MapleStory | GMS</p>
+                                <span class="videos-video-youtube">YouTube</span>
+                                <span class="videos-video-author">· coppersan</span>
+                                <p class="videos-video-date">17 hours ago</p>
+                            </span>
+                        </div>
+                    </a>
+                    <!-- Video 3 -->
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78QwqsBegQIJBAB&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIw24zYzKtnQ&usg=AOvVaw3QdpFuXKUF02B7NC3KzyaJ"
+                        class="videos-video-url">
+                        <div class="videos-video">
+                            <span>
+                                <img src="images/video-thumbnail-3.jpeg" alt="Video Thumbnail"
+                                    class="videos-video-thumbnail">
+                            </span>
+                            <span>
+                                <p class="videos-video-title">The Ultimate Begniner Guide To Maplestory | MapleStory ...
+                                </p>
+                                <span class="videos-video-youtube">YouTube</span>
+                                <span class="videos-video-author">· coppersan</span>
+                                <p class="videos-video-date">Nov 25, 2020</p>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Ten Key Moments -->
+                <div class="ten-key-moments">
+                    <img src="images/ten-key-moments-thumbnail.jpeg" alt="Video Thumbnail"
+                        class="ten-key-moments-thumbnail">
+                    <p class="ten-key-moments-text">10 key moments in this video</p>
+                    <span class="ten-key-moments-right">
+                        <img class="ten-key-moments-arrow" alt="Expand" src="images/v-arrow.png">
+                    </span>
+                </div>
+                <!-- View All -->
+                <div class="view-all">
+                    <div class="view-all-hr"></div>
+                    <a class="view-all-url"
+                        href="https://www.google.com/search?client=ubuntu&hs=tW2&channel=fs&tbm=vid&q=maplestory&sa=X&ved=2ahUKEwi43bOin8_yAhUC6OAKHZw6C78Q8ccDegQIKBAG">
+                        <div class="view-all-button">
+                            <img class="view-all-button-arrow" alt="View all" src="images/right-arrow.png">
+                            <span class="view-all-button-text">View all</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Normal website -->
             <div class="website">
-                
                 <p class="url">https://maplestorym.nexon.com</p>
                 <a href="https://maplestory.nexon.net/news" class="title">MapleStory M</a>
             </div>
+            <!-- Normal website -->
             <div class="website">
                 <p class="url">http://www.maplesea.com</p>
-                <a href="https://maplestory.nexon.net/news" class="title">
-                    MapleSEA — Explore MapleStory! A popular,
-                    fun-filled online ...
-                </a>
-                <p class="description">
-                    <b>MapleStory</b>
-                    is a free-to-play, 2D, side-scrolling massively multiplayer
-                    online role-playing game.
-                </p>
+                <a href="https://maplestory.nexon.net/news" class="title">MapleSEA — Explore MapleStory! A popular,
+                    fun-filled online ...</a>
+                <p class="description"> <b>MapleStory</b> is a free-to-play, 2D, side-scrolling massively multiplayer
+                    online role-playing game.</p>
             </div>
+            <!-- Normal website -->
             <div class="website">
                 <div class="full-url">
                     <p class="url">https://www.youtube.com</p>
                     <p class="sub-url"> › user › MapleStory</p>
                 </div>
                 <a href="https://maplestory.nexon.net/news" class="title">MapleStory - YouTube</a>
-                <p class="description">
-                    Part 2 of the Neo Update features Tera Burning Plus, Hotel Arcus, Zero & Beast
-                    Tamer creation, new boss Seren, and more! +++ Expand +++ Follow
-                    <b>MapleStory</b> ...
-                </p>
+                <p class="description">Part 2 of the Neo Update features Tera Burning Plus, Hotel Arcus, Zero & Beast
+                    Tamer creation, new boss Seren, and more! +++ Expand +++ Follow <b>MapleStory</b> ...</p>
             </div>
-
+            <!-- Related Searches -->
             <div class="related-searches">
                 <p class="related-searches-title">Related searches</p>
                 <div class="related-searches-grid">
-
                     <span class="related-search-grid-item">
-                        <img src="images/search-icon.png" class="related-search-grid-item-image">
-                        <span class="related-search-grid-item-text">maplestory <b>download</b></span>
+                        <img src="images/search-icon.png" alt="" class="related-search-grid-item-image">
+                        <span class="related-search-grid-item-text">
+                            maplestory
+                            <b>download</b>
+                        </span>
                     </span>
                     <span class="related-search-grid-item">
-                        <img src="images/search-icon.png" class="related-search-grid-item-image">
-                        <span class="related-search-grid-item-text">maplestory <b>neo</b></span>
+                        <img src="images/search-icon.png" alt="" class="related-search-grid-item-image">
+                        <span class="related-search-grid-item-text">
+                            maplestory
+                            <b>neo</b>
+                        </span>
                     </span>
                     <span class="related-search-grid-item">
-                        <img src="images/search-icon.png" class="related-search-grid-item-image">
-                        <span class="related-search-grid-item-text">maplestory <b>reddit</b></span>
+                        <img src="images/search-icon.png" alt="" class="related-search-grid-item-image">
+                        <span class="related-search-grid-item-text">
+                            maplestory
+                            <b>reddit</b>
+                        </span>
                     </span>
                     <span class="related-search-grid-item">
-                        <img src="images/search-icon.png" class="related-search-grid-item-image">
-                        <span class="related-search-grid-item-text">maplestory <b>3</b></span>
+                        <img src="images/search-icon.png" alt="" class="related-search-grid-item-image">
+                        <span class="related-search-grid-item-text">
+                            maplestory
+                            <b>3</b>
+                        </span>
                     </span>
                     <span class="related-search-grid-item">
-                        <img src="images/search-icon.png" class="related-search-grid-item-image">
-                        <span class="related-search-grid-item-text">maplestory <b>wiki</b></span>
+                        <img src="images/search-icon.png" alt="" class="related-search-grid-item-image">
+                        <span class="related-search-grid-item-text">
+                            maplestory
+                            <b>wiki</b>
+                        </span>
                     </span>
                     <span class="related-search-grid-item">
-                        <img src="images/search-icon.png" class="related-search-grid-item-image">
-                        <span class="related-search-grid-item-text">maplestory <b>on mac</b></span>
+                        <img src="images/search-icon.png" alt="" class="related-search-grid-item-image">
+                        <span class="related-search-grid-item-text">
+                            maplestory
+                            <b>on mac</b>
+                        </span>
                     </span>
                     <span class="related-search-grid-item">
-                        <img src="images/search-icon.png" class="related-search-grid-item-image">
-                        <span class="related-search-grid-item-text">maplestory <b>2021</b></span>
+                        <img src="images/search-icon.png" alt="" class="related-search-grid-item-image">
+                        <span class="related-search-grid-item-text">
+                            maplestory
+                            <b>2021</b>
+                        </span>
                     </span>
                     <span class="related-search-grid-item">
-                        <img src="images/search-icon.png" class="related-search-grid-item-image">
-                        <span class="related-search-grid-item-text">maplestory <b>release date</b></span>
+                        <img src="images/search-icon.png" alt="" class="related-search-grid-item-image">
+                        <span class="related-search-grid-item-text">
+                            maplestory
+                            <b>release date</b>
+                        </span>
                     </span>
                 </div>
             </div>
         </div>
+        <!-- Right side -->
         <div class="grid-item-2">
-            <!-- 2 --></div>
-    </div>
-    <div class="country-footer">
-        <p class="footer-text">Egypt</p>
-    </div>
-    <div class="footer">
-        <div class="footer-left">
-            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwinopmR3s7yAhXkRjABHSp5ADMQkNQCCA8&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-EG%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw0P8pNdPysXdJqWv-FIzYzK" class="footer-text link">About</a>
-            <br>
-            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwinopmR3s7yAhXkRjABHSp5ADMQkdQCCBA&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_eg%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3TsT_TPdU_jcpYr5P_HcDE" class="footer-text link">Advertising</a>
-            <br>
-            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwinopmR3s7yAhXkRjABHSp5ADMQktQCCBE&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K" class="footer-text link">Business</a>
-            <br>
-            <a href="https://google.com/search/howsearchworks/?fg=1" class="footer-text link">How Search Works</a>
+            <!-- 2 -->
         </div>
-        <div class="footer-right">
-            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwinopmR3s7yAhXkRjABHSp5ADMQ8awCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-EG%26fg%3D1&usg=AOvVaw0lTgBPRsutLh00I6HywCdq" class="footer-text link">Privacy</a>
+    </div>
+
+    <div class="footer">
+        <div class="footer-sub">
+            <p class="footer-text">Egypt</p>
             <br>
-            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwinopmR3s7yAhXkRjABHSp5ADMQ8qwCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-EG%26fg%3D1&usg=AOvVaw3xWcY2-r21gKVUHzty2v1s" class="footer-text link">Terms</a>
+            
+            <span class="small-circle"></span>
+            <p class="footer-text area-text">
+                <b>Giza Governorate</b>
+                -
+                <a href="" class="footer-text link blue-url">From your IP address</a>
+                -
+                <a href="" class="footer-text link blue-url">Update location</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer footer-border">
+        <div class="footer-sub">
+            <a href="" class="footer-text link">Help</a>
             <br>
-            <a href="https://www.google.com/preferences?hl=en-EG&fg=1" class="footer-text link">Settings</a>
+            <a href="" class="footer-text link">Send feedback</a>
+            <br>
+            <a href="" class="footer-text link">Privacy</a>
+            <br>
+            <a href="" class="footer-text link">Terms</a>
+            <br>
         </div>
     </div>
 </body>
+
 </html>
